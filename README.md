@@ -22,6 +22,11 @@ Here you can pass multiple packages to build:packages command. eg.
 npm run build:packages packages/common-1 packages/common-2
 ```
 
+## Serve packages
+```bash
+npm run serve:packages packages/common-1
+```
+
 ## Serve
 ```bash
 npm run serve
