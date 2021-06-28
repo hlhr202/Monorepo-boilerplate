@@ -36,4 +36,4 @@ const webpackConfig: Configuration & { devServer: DevServerConfig } = {
     plugins: [new HtmlWebpackPlugin()],
 };
 
-module.exports = webpackConfig;
+export default webpackConfig;
