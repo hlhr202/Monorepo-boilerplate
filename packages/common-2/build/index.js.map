@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.tsx"],
+  "sourcesContent": ["import React from \"react\";\n\nexport const Component2 = () => {\n    return <div>from common2</div>;\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,mBAAkB;AAEX,IAAM,aAAa,MAAM;AAC5B,SAAO,mDAAC,OAAD,MAAK;AAAA;",
+  "names": []
+}

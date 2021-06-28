@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.tsx"],
+  "sourcesContent": ["import React from \"react\";\nimport { Input } from \"antd\";\n\nexport const Component1 = () => {\n    return (\n        <div>\n            <Input />\n            from common1\n        </div>\n    );\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,mBAAkB;AAClB,kBAAsB;AAEf,IAAM,aAAa,MAAM;AAC5B,SACI,mDAAC,OAAD,MACI,mDAAC,mBAAD,OAAS;AAAA;",
+  "names": []
+}

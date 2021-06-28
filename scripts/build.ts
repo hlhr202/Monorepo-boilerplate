@@ -10,7 +10,7 @@ export const parseArgs = () => {
 
 export const build = async (pkg: string) => {
     await new Promise<void>((res, rej) =>
-        rimraf(path.resolve(__dirname, `../${pkg}/dist`), (err) => {
+        rimraf(path.resolve(__dirname, `../${pkg}/build`), (err) => {
             if (err) rej(err);
             else res();
         })
@@ -24,7 +24,8 @@ export const build = async (pkg: string) => {
         format: "cjs",
         color: true,
         logLevel: "info",
-        outdir: path.resolve(__dirname, `../${pkg}/dist`),
+        sourcemap: 'external',
+        outdir: path.resolve(__dirname, `../${pkg}/build`),
         external: Object.keys(npmPackage.dependencies),
         plugins: [dtsPlugin()],
     });
