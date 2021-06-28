@@ -5,7 +5,7 @@ import path from "path";
 
 const webpackConfig: Configuration & { devServer: DevServerConfig } = {
     context: path.resolve(__dirname, "./src"),
-    mode: "development",
+    mode: process.env.NODE_ENV === "production" ? "production" : "development",
     entry: {
         index: "./index.tsx",
     },
